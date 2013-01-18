@@ -1,0 +1,10 @@
+git clone git@github.com:Magnulas/ANN13 //Pull a new repository
+
+
+//push new changes
+git add -A //To add all the changes
+git commit -m "Message" //Create a message for the changes
+git push origin master
+
+//pull new changes
+git pull origin master
