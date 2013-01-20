@@ -1,13 +1,13 @@
-ndata = 2;
+ndata = 200;
 
 
 classA = zeros(2,ndata);
 classB = zeros(2,ndata);
 
 classA(1,:) = randn(1,ndata) .* 0.5 + 1.0;
-classA(2,:) = randn(1,ndata) .* 0.5 + 0.5;
+classA(2,:) = randn(1,ndata) .* 0.5 + 1.0;
 classB(1,:) = randn(1,ndata) .* 0.5 - 1.0;
-classB(2,:) = randn(1,ndata) .* 0.5 + 0;
+classB(2,:) = randn(1,ndata) .* 0.5 - 1.0;
 
 patterns = [classA, classB];
 targets = [ones(1,ndata), ones(1,ndata).*-1];
