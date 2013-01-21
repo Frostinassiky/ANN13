@@ -4,7 +4,7 @@
 X = [patterns; ones(1,ndata)];
 T = targets;
 
-ephocs = 20;
+ephocs = 30;
 eta = 0.001;
 
 
