@@ -1,4 +1,4 @@
-function twolayer( patterns, targets, nHiddenLayers, epochs)
+function twolayer( patterns, targets, nHiddenLayers, epochs,momentum=0.9)
 
 %One weight for each connection between datapoint in pattern and
 %nHiddenLayers
@@ -14,8 +14,6 @@ dW = zeros(size(W,1),size(W,2));
 dV = zeros(size(V,1),size(V,2));
 
 error = zeros(1,epochs);
-eta=0.01;
-momentum=0.9;
 
 for i=1:epochs,
 [Oout, Hout] = forwardpass(X, W, V);
