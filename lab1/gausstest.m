@@ -1,9 +1,26 @@
-function twolayer( patterns, targets, nHiddenLayers, epochs)
+x=[-5:1:5]';
+y=x;
+%theta = 0:0.01:2*pi;
+%r = 0:0.1:5;
 
-%One weight for each connection between datapoint in pattern and
-%nHiddenLayers
+%for r=0:0.1:5,
+   % for theta = 0:0.01:2*pi,
+  %      targets
+ %   end
+%end
 
-%initlaize W and V depending on patterns/output size and nHiddenLayers
+%x = r * cos(theta);
+%y = r * sin(theta);
+
+
+z=exp(-x.*x*0.1) * exp(-y.*y*0.1)' - 0.5;
+
+epochs = 1000;
+nHiddenLayers = 50;
+targets = reshape (z, 1, size(z,1)*size(z,2));
+[xx, yy] = meshgrid (x, y);
+patterns = [reshape(xx, 1, size(xx,1)*size(xx,2)); reshape(yy, 1, size(yy,1)*size(yy,2))];
+
 
 [insize, ndata] = size(patterns);
 [outsize, ndata] = size(targets);
@@ -22,15 +39,8 @@ for i=1:epochs,
 [delta_H, delta_O] = backwardpass(Oout, Hout, V, targets, nHiddenLayers);
 [W, V, dW, dV] = weightupdate(delta_H, delta_O, Hout, momentum, eta, dW, dV, W, V, X);
 
-%error(i) = sum(sum(abs(sign(Oout) - targets)./2));
-
-error(i) = 0.5 * sum(sum((Oout-targets).^2));
+    zz = reshape(Oout, sqrt(ndata), sqrt(ndata));
+    mesh(x,y,zz-z);
+    axis([-5 5 -5 5 -0.7 0.7]);
+    drawnow;
 end
-
-x = 1:epochs;
-plot(x,error);
-
-O = sign(Oout)
-WX = sign(rho(W*X))
-
-end 
