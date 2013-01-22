@@ -1,16 +1,6 @@
 x=[-5:1:5]';
 y=x;
-%theta = 0:0.01:2*pi;
-%r = 0:0.1:5;
 
-%for r=0:0.1:5,
-   % for theta = 0:0.01:2*pi,
-  %      targets
- %   end
-%end
-
-%x = r * cos(theta);
-%y = r * sin(theta);
 
 
 z=exp(-x.*x*0.1) * exp(-y.*y*0.1)' - 0.5;
@@ -31,7 +21,7 @@ dW = zeros(size(W,1),size(W,2));
 dV = zeros(size(V,1),size(V,2));
 
 error = zeros(1,epochs);
-eta=0.1;
+eta=0.01;
 momentum=0.9;
 
 for i=1:epochs,
@@ -42,5 +32,17 @@ for i=1:epochs,
     zz = reshape(Oout, sqrt(ndata), sqrt(ndata));
     mesh(x,y,zz-z);
     axis([-5 5 -5 5 -0.7 0.7]);
+    title(['Gauss difference with ', int2str(epochs), ' epochs, eta ', num2str(eta), ' and ', int2str(nHiddenLayers), ' hidden nodes']);
+  
     drawnow;
 end
+
+figure;
+    mesh(x,y,zz);
+    axis([-5 5 -5 5 -0.7 0.7]);
+    title(['Gauss approximation with ', int2str(epochs), ' epochs, eta ', num2str(eta), ' and ', int2str(nHiddenLayers), ' hidden nodes']);
+    
+figure;
+mesh(x,y,z);
+    axis([-5 5 -5 5 -0.7 0.7]);
+    title('Gauss function');

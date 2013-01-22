@@ -1,16 +1,6 @@
-x=[-5:1:5]';
+x=[-5:0.5:5]';
 y=x;
-%theta = 0:0.01:2*pi;
-%r = 0:0.1:5;
 
-%for r=0:0.1:5,
-   % for theta = 0:0.01:2*pi,
-  %      targets
- %   end
-%end
-
-%x = r * cos(theta);
-%y = r * sin(theta);
 
 
 z=exp(-x.*x*0.1) * exp(-y.*y*0.1)' - 0.5;
@@ -22,7 +12,7 @@ targets = reshape (z, 1, size(z,1)*size(z,2));
 [xx, yy] = meshgrid (x, y);
 patterns = [reshape(xx, 1, size(xx,1)*size(xx,2)); reshape(yy, 1, size(yy,1)*size(yy,2))];
 
-nPoints = 10:2:size(targets,2)*0.8;
+nPoints = 10:10:size(targets,2);
 %trainingError = zeros(1,size(nPoints));
 trainingError = [];
 validationError = [];
@@ -33,22 +23,29 @@ permute = randperm(size(allPatterns,2));
 allPatterns = allPatterns(:,permute);
 allTargets = allTargets(:,permute);
 
+[insize, ndata] = size(patterns);
+[outsize, ndata] = size(targets);
+
+Wstart = randn(nHiddenLayers, insize + 1); %hmm, size correct? size and bias
+Vstart = randn(outsize, nHiddenLayers + 1);
+
 for nPoint = nPoints,
 %Generalization test
 patterns = allPatterns(:,1:nPoint);
 targets = allTargets(:,1:nPoint);
 %%%%%
 
-
 [insize, ndata] = size(patterns);
 [outsize, ndata] = size(targets);
+
 X = [patterns ; ones(1,ndata)];
-W = randn(nHiddenLayers, insize + 1); %hmm, size correct? size and bias
-V = randn(outsize, nHiddenLayers + 1); %hmm, size correct? Add one for bias?
+W = Wstart; V = Vstart;
+%W = randn(nHiddenLayers, insize + 1); %hmm, size correct? size and bias
+%V = randn(outsize, nHiddenLayers + 1); %hmm, size correct? Add one for bias?
 dW = zeros(size(W,1),size(W,2));
 dV = zeros(size(V,1),size(V,2));
 
-eta=0.1;
+eta=0.01;
 momentum=0.9;
 
     for i=1:epochs,
@@ -69,6 +66,6 @@ momentum=0.9;
     
 end
 
-plot(nPoints,trainingError, '-ro', nPoints,validationError, '-go');
+plot(nPoints,trainingError, '-ro', nPoints,validationError, '-bo');
 legend('Training error','Validation error');
 

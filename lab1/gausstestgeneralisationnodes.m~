@@ -33,7 +33,7 @@ allTargets = allTargets(:,permute);
 %nPoint = round(size(allTargets,2)*0.2);
 %nPoint = 10;
 %nPoint = 25;
-nPoint = 60;
+nPoint = 
 
 %layersArray = [1:1:50,60:20:400];
 layersArray = [1:1:30];

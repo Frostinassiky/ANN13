@@ -1,4 +1,5 @@
-function twolayer( patterns, targets, nHiddenLayers, epochs)
+%function error = twolayer( patterns, targets, nHiddenLayers, epochs, eta,momentum, Wstart, Vstart)
+function error = twolayer( patterns, targets, nHiddenLayers, epochs, eta,momentum)
 
 %One weight for each connection between datapoint in pattern and
 %nHiddenLayers
@@ -10,12 +11,12 @@ function twolayer( patterns, targets, nHiddenLayers, epochs)
 X = [patterns ; ones(1,ndata)];
 W = randn(nHiddenLayers, insize + 1); %hmm, size correct? size and bias
 V = randn(outsize, nHiddenLayers + 1); %hmm, size correct? Add one for bias?
+%W = Wstart;
+%V = Vstart;
 dW = zeros(size(W,1),size(W,2));
 dV = zeros(size(V,1),size(V,2));
 
 error = zeros(1,epochs);
-eta=0.1;
-momentum=0.9;
 
 for i=1:epochs,
 [Oout, Hout] = forwardpass(X, W, V);
@@ -27,10 +28,11 @@ for i=1:epochs,
 error(i) = 0.5 * sum(sum((Oout-targets).^2));
 end
 
-x = 1:epochs;
-plot(x,error);
+%x = 1:epochs;
+%plot(x,error);
 
 O = sign(Oout)
 WX = sign(rho(W*X))
+
 
 end 

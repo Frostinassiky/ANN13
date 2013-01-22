@@ -1,12 +1,11 @@
-sepdata
 [insize, ndata] = size(patterns);
 [outsize, ndata] = size(targets);
 
 X = [patterns; ones(1,ndata)];
 T = targets;
 
-ephocs = 200;
-eta = 0.01;
+ephocs = 100;
+eta = 0.001;
 
 W = randn(1, insize +1);
 %when we don't solve it but converge we're moving in the wrong direction
@@ -46,6 +45,38 @@ for i=1:ephocs,
     y,'-');
     
     axis([-s, s, -s, s], 'square');
-    title(['ephocs: ' int2str(i) ', eta: ' num2str(eta,4)])
+    title(['Non-separable data.', ' ephocs: ' int2str(i) ', eta: ' num2str(eta,4)])
+    %legend('classA N(1,0.5)', 'classB N(-1,0)')
+    
+        %hold on;
+    
+    
     drawnow;
 end
+
+
+theta0_vals = linspace(-10, 10, 300);
+theta1_vals = linspace(-1, 4, 300);
+
+% initialize J_vals to a matrix of 0's
+J_vals = zeros(length(theta0_vals), length(theta1_vals));
+
+% Fill out J_vals
+for i = 1:length(theta0_vals)
+    for j = 1:length(theta1_vals)
+	  t = [theta0_vals(i); theta1_vals(j); W(3)]';    
+	  J_vals(i,j) = sum((t*X - T).^2) ;
+    end
+end
+
+
+% Because of the way meshgrids work in the surf command, we need to 
+% transpose J_vals before calling surf, or else the axes will be flipped
+J_vals = J_vals';
+% Surface plot
+figure;
+surf(theta0_vals, theta1_vals, J_vals)
+xlabel('\theta_0'); ylabel('\theta_1');
+title(['Weights: ', num2str(W,4)])
+
+

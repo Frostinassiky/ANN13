@@ -1,7 +1,0 @@
-function [ output_args ] = forwardpass( input_args )
-
-[dummy, ndata] = size(patterns);
-Hin = W * [patterns ; ones(1,ndata)];
-
-
-end 
