@@ -5,9 +5,9 @@ targets = reshape (z, 1, size(z,1)*size(z,2));
 [xx, yy] = meshgrid (x, y);
 patterns = [reshape(xx, 1, size(xx,1)*size(xx,2)); reshape(yy, 1, size(yy,1)*size(yy,2))];
 nPoints = 10:10:size(targets,2);
-%trainingError = zeros(1,size(nPoints));
-trainingError = zeros(1,size(nPoints));
-validationError = zeros(1,size(nPoints));
+
+trainingError = zeros(1,size(nPoints,2));
+validationError = zeros(1,size(nPoints,2));
 allPatterns = patterns;
 allTargets = targets;
 epochs = 500;
@@ -61,7 +61,7 @@ for runs=1:iters,
         validationError(j) = validationError(j) + 0.5 * sum(sum((ValOout-allTargets).^2));
         j = j + 1;
     end
-    if mod(runs,10),
+    if mod(runs,10)==0,
        disp('Number of runs done')
        disp(runs)
     end

@@ -190,5 +190,19 @@ We try and approximate a Gaussian function using a twolayered network. The resul
 
 \clearpage
 \section{Two layered neural network used for generalisation}
+Finally we try to see how the generalisation accuarcy of the network depends on the size of the training data aswellas on the number of hidden nodes as seen in figure \ref{fig:gauss2:sub1} and figure \ref{fig:gauss2:sub2}. We see that the more data you have the better you will classify unseen data. We also see that the more hidden nodes you haev the more the network is prone to overfitting.
+
+\begin{figure}[h!]
+\subfigure[Generalization depending on training data size.]{
+    \includegraphics[width=0.5\linewidth]{lab1/gaussvalidation.png}
+    \label{fig:gauss2:sub1}
+}
+\subfigure[Generalization depening on number of hidden nodes.]{
+    \includegraphics[width=0.5\linewidth]{lab1/gaussvalidationnodes2.png}
+    \label{fig:gauss2:sub2}
+}
+\label{fig:gauss1}
+\caption{Two layer approximation of Gaussian function.}
+\end{figure}
 
 \end{document}
