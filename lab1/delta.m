@@ -25,9 +25,9 @@ for i=1:ephocs,
     %The values in W*X can at most/least be 1/-1.
     %This seems to work better and it seems like it solves all linearly
     %seperable problems now.
-    b = W*X;
-    Y = (b>1)-(b<-1)+b.*(b>=-1 & b<=1);
-    %Y =W*X;
+    %b = W*X;
+    %Y = (b>1)-(b<-1)+b.*(b>=-1 & b<=1);
+    Y =W*X;
     deltaW = eta*(T-Y)*X';
     W = W + deltaW;
     
@@ -45,18 +45,18 @@ for i=1:ephocs,
     y,'-');
     
     axis([-s, s, -s, s], 'square');
-    title(['Non-separable data.', ' ephocs: ' int2str(i) ', eta: ' num2str(eta,4)])
+    title(['Separable data.', ' ephocs: ' int2str(i) ', eta: ' num2str(eta,4)])
     %legend('classA N(1,0.5)', 'classB N(-1,0)')
     
-        %hold on;
-    
+    %hold on;
+    %pause();
     
     drawnow;
 end
 
 
-theta0_vals = linspace(-10, 10, 300);
-theta1_vals = linspace(-1, 4, 300);
+theta0_vals = linspace(-10, 10, 100);
+theta1_vals = linspace(-1, 4, 100);
 
 % initialize J_vals to a matrix of 0's
 J_vals = zeros(length(theta0_vals), length(theta1_vals));
@@ -74,9 +74,9 @@ end
 % transpose J_vals before calling surf, or else the axes will be flipped
 J_vals = J_vals';
 % Surface plot
-figure;
-surf(theta0_vals, theta1_vals, J_vals)
-xlabel('\theta_0'); ylabel('\theta_1');
-title(['Weights: ', num2str(W,4)])
+%figure;
+%surf(theta0_vals, theta1_vals, J_vals)
+%xlabel('\theta_0'); ylabel('\theta_1');
+%title(['Weights: ', num2str(W,4)])
 
 

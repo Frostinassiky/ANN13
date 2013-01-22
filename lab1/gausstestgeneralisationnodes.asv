@@ -15,8 +15,8 @@ nPoint = 40;
 layersArray = [1:1:30];
 trainingError = zeros(1,size(layersArray,2));
 validationError = zeros(1,size(layersArray,2));
-epochs = 1000;
-iters = 200;
+epochs = 400;
+iters = 100;
 eta=0.01;
 momentum=0.9;
 ndata = nPoint;
@@ -47,7 +47,7 @@ for runs=1:iters,
         validationError(j) = validationError(j) + 0.5 * sum(sum((ValOout-allTargets).^2));
         j = j + 1;
     end
-    if mod(runs,10)==0,
+    if mod(runs,10)==10,
        disp('Number of runs done')
        disp(runs)
     end

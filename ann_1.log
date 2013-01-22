@@ -1,0 +1,624 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.1.19)  22 JAN 2013 19:09
+entering extended mode
+**C:/cygwin/home/Magnus/matlab/ANN13/ann_1.tex
+(C:/cygwin/home/Magnus/matlab/ANN13/ann_1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen103
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen104
+\subfiglabelskip=\skip46
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+) (C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count92
+\rotFPtop=\skip49
+\rotFPbot=\skip50
+\rot@float@box=\box26
+\rot@mess@toks=\toks15
+)
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.sty"
+
+! Package babel Error: You have used an old interface to call babel
+(babel)                You may expect compatibility problems wit other packages
+.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73     \bblstyerror
+                     
+You could proceed but don't complain if you run into errors
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count93
+\U@D=\dimen107
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2011/08/19 v6.82h Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen108
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2011/08/19 v6.82h Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count96
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4053.
+Package hyperref Info: Link nesting OFF on input line 4058.
+Package hyperref Info: Hyper index ON on input line 4061.
+Package hyperref Info: Plain pages OFF on input line 4068.
+Package hyperref Info: Backreferencing OFF on input line 4073.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4291.
+\c@Hy@tempcnt=\count97
+
+(C:\cygwin\home\Magnus\matlab\ANN13\url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4644.
+\Fld@menulength=\count98
+\Field@Width=\dimen109
+\Fld@charsize=\dimen110
+Package hyperref Info: Hyper figures OFF on input line 5730.
+Package hyperref Info: Link nesting OFF on input line 5735.
+Package hyperref Info: Hyper index ON on input line 5738.
+Package hyperref Info: backreferencing OFF on input line 5745.
+Package hyperref Info: Link coloring OFF on input line 5750.
+Package hyperref Info: Link coloring with OCG OFF on input line 5755.
+Package hyperref Info: PDF/A mode OFF on input line 5760.
+LaTeX Info: Redefining \ref on input line 5800.
+LaTeX Info: Redefining \pageref on input line 5804.
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2011/08/19 v6.82h Hyperref driver for pdfTeX
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip51
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen111
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen112
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count104
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count105
+\leftroot@=\count106
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count107
+\DOTSCASE@=\count108
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
+\dotsspace@=\muskip11
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks19
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks20
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip55
+\f@ncyO@elh=\skip56
+\f@ncyO@erh=\skip57
+\f@ncyO@olh=\skip58
+\f@ncyO@orh=\skip59
+\f@ncyO@elf=\skip60
+\f@ncyO@erf=\skip61
+\f@ncyO@olf=\skip62
+\f@ncyO@orf=\skip63
+)
+(C:\cygwin\home\Magnus\matlab\ANN13\minipage.sty)
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count116
+\lst@gtempboxa=\box29
+\lst@token=\toks23
+\lst@length=\count117
+\lst@currlwidth=\dimen120
+\lst@column=\count118
+\lst@pos=\count119
+\lst@lostspace=\dimen121
+\lst@width=\dimen122
+\lst@newlines=\count120
+\lst@lineno=\count121
+\lst@maxwidth=\dimen123
+
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
+\lst@framebox=\box30
+)
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(C:\cygwin\home\Magnus\matlab\ANN13\ann_1.aux
+
+LaTeX Warning: Label `fig:linear1:sub3' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:linear1:sub3' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+ (C:\Users\Magnus\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count124
+\scratchdimen=\dimen124
+\scratchbox=\box31
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen125
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks25
+)
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring OFF on input line 31.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count130
+)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+
+(C:\cygwin\home\Magnus\matlab\ANN13\ann_1.out)
+(C:\cygwin\home\Magnus\matlab\ANN13\ann_1.out)
+\@outlinefile=\write4
+\c@lstlisting=\count131
+
+
+LaTeX Warning: No \author given.
+
+<lab1/seperabledata.png, id=26, 334.24875pt x 316.18124pt>
+File: lab1/seperabledata.png Graphic file (type png)
+
+<use lab1/seperabledata.png>
+Package pdftex.def Info: lab1/seperabledata.png used on input line 51.
+(pdftex.def)             Requested size: 234.2025pt x 221.54729pt.
+
+<lab1/linearsepdatalast.png, id=27, 326.72063pt x 311.66437pt>
+File: lab1/linearsepdatalast.png Graphic file (type png)
+
+<use lab1/linearsepdatalast.png>
+Package pdftex.def Info: lab1/linearsepdatalast.png used on input line 55.
+(pdftex.def)             Requested size: 234.2025pt x 223.409pt.
+
+<lab1/linearsepdataall.png, id=28, 330.48468pt x 311.66437pt>
+File: lab1/linearsepdataall.png Graphic file (type png)
+
+<use lab1/linearsepdataall.png>
+Package pdftex.def Info: lab1/linearsepdataall.png used on input line 59.
+(pdftex.def)             Requested size: 234.2025pt x 220.87427pt.
+
+<lab1/linearsurf.png, id=29, 964.35281pt x 683.55376pt>
+File: lab1/linearsurf.png Graphic file (type png)
+
+<use lab1/linearsurf.png>
+Package pdftex.def Info: lab1/linearsurf.png used on input line 63.
+(pdftex.def)             Requested size: 234.2025pt x 166.0067pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 51--64
+[][] [][]
+ []
+
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 51--64
+[][] [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<lab1/linearseplargeeta.png, id=30, 422.32782pt x 311.66437pt>
+File: lab1/linearseplargeeta.png Graphic file (type png)
+
+<use lab1/linearseplargeeta.png>
+Package pdftex.def Info: lab1/linearseplargeeta.png used on input line 73.
+(pdftex.def)             Requested size: 234.2025pt x 172.83786pt.
+
+<lab1/linearseplargeetaall.png, id=31, 422.32782pt x 311.66437pt>
+File: lab1/linearseplargeetaall.png Graphic file (type png)
+
+<use lab1/linearseplargeetaall.png>
+Package pdftex.def Info: lab1/linearseplargeetaall.png used on input line 77.
+(pdftex.def)             Requested size: 234.2025pt x 172.83786pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 73--78
+[][] [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<lab1/linearnonsep.png, id=34, 422.32782pt x 316.18124pt>
+File: lab1/linearnonsep.png Graphic file (type png)
+
+<use lab1/linearnonsep.png>
+Package pdftex.def Info: lab1/linearnonsep.png used on input line 87.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+<lab1/linearnonsepall.png, id=35, 422.32782pt x 311.66437pt>
+File: lab1/linearnonsepall.png Graphic file (type png)
+
+<use lab1/linearnonsepall.png>
+Package pdftex.def Info: lab1/linearnonsepall.png used on input line 91.
+(pdftex.def)             Requested size: 234.2025pt x 172.83786pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 87--92
+[][] [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+{C:/Users/Magnus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/cyg
+win/home/Magnus/matlab/ANN13/lab1/seperabledata.png (PNG copy)> <C:/cygwin/home
+/Magnus/matlab/ANN13/lab1/linearsepdatalast.png (PNG copy)> <C:/cygwin/home/Mag
+nus/matlab/ANN13/lab1/linearsepdataall.png (PNG copy)> <C:/cygwin/home/Magnus/m
+atlab/ANN13/lab1/linearsurf.png (PNG copy)>] [3 <C:/cygwin/home/Magnus/matlab/A
+NN13/lab1/linearseplargeeta.png (PNG copy)> <C:/cygwin/home/Magnus/matlab/ANN13
+/lab1/linearseplargeetaall.png (PNG copy)> <C:/cygwin/home/Magnus/matlab/ANN13/
+lab1/linearnonsep.png (PNG copy)> <C:/cygwin/home/Magnus/matlab/ANN13/lab1/line
+arnonsepall.png (PNG copy)>]
+<lab1/twolayernonsepdata.png, id=69, 422.32782pt x 316.18124pt>
+File: lab1/twolayernonsepdata.png Graphic file (type png)
+
+<use lab1/twolayernonsepdata.png>
+Package pdftex.def Info: lab1/twolayernonsepdata.png used on input line 112.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+<lab1/twolayererrornodes.png, id=70, 422.32782pt x 307.90031pt>
+File: lab1/twolayererrornodes.png Graphic file (type png)
+
+<use lab1/twolayererrornodes.png>
+Package pdftex.def Info: lab1/twolayererrornodes.png used on input line 116.
+(pdftex.def)             Requested size: 234.2025pt x 170.75044pt.
+
+<lab1/twolayererrornodesclassified.png, id=71, 422.32782pt x 311.66437pt>
+File: lab1/twolayererrornodesclassified.png Graphic file (type png)
+
+<use lab1/twolayererrornodesclassified.png>
+Package pdftex.def Info: lab1/twolayererrornodesclassified.png used on input li
+ne 120.
+(pdftex.def)             Requested size: 234.2025pt x 172.83786pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 112--121
+[][] [][]
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<lab1/twolayereta.png, id=72, 422.32782pt x 316.18124pt>
+File: lab1/twolayereta.png Graphic file (type png)
+
+<use lab1/twolayereta.png>
+Package pdftex.def Info: lab1/twolayereta.png used on input line 130.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+<lab1/twolayermomentum.png, id=73, 422.32782pt x 316.18124pt>
+File: lab1/twolayermomentum.png Graphic file (type png)
+
+<use lab1/twolayermomentum.png>
+Package pdftex.def Info: lab1/twolayermomentum.png used on input line 134.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 130--135
+[][] [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4
+
+] [5 <C:/cygwin/home/Magnus/matlab/ANN13/lab1/twolayernonsepdata.png (PNG copy)
+> <C:/cygwin/home/Magnus/matlab/ANN13/lab1/twolayererrornodes.png (PNG copy)> <
+C:/cygwin/home/Magnus/matlab/ANN13/lab1/twolayererrornodesclassified.png (PNG c
+opy)>] [6 <C:/cygwin/home/Magnus/matlab/ANN13/lab1/twolayereta.png (PNG copy)> 
+<C:/cygwin/home/Magnus/matlab/ANN13/lab1/twolayermomentum.png (PNG copy)>]
+[7
+
+] <lab1/gaussapprox.png, id=123, 422.32782pt x 302.63063pt>
+File: lab1/gaussapprox.png Graphic file (type png)
+
+<use lab1/gaussapprox.png>
+Package pdftex.def Info: lab1/gaussapprox.png used on input line 178.
+(pdftex.def)             Requested size: 234.2025pt x 167.82806pt.
+
+<lab1/gaussfunc.png, id=124, 422.32782pt x 316.18124pt>
+File: lab1/gaussfunc.png Graphic file (type png)
+
+<use lab1/gaussfunc.png>
+Package pdftex.def Info: lab1/gaussfunc.png used on input line 182.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+<lab1/gaussdiff.png, id=125, 422.32782pt x 316.18124pt>
+File: lab1/gaussdiff.png Graphic file (type png)
+
+<use lab1/gaussdiff.png>
+Package pdftex.def Info: lab1/gaussdiff.png used on input line 186.
+(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+
+Overfull \hbox (16.94377pt too wide) in paragraph at lines 178--188
+[][] [][]
+ []
+
+[8
+
+ <C:/cygwin/home/Magnus/matlab/ANN13/lab1/gaussapprox.png (PNG copy)> <C:/cygwi
+n/home/Magnus/matlab/ANN13/lab1/gaussfunc.png (PNG copy)> <C:/cygwin/home/Magnu
+s/matlab/ANN13/lab1/gaussdiff.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+ [9
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+
+(C:\cygwin\home\Magnus\matlab\ANN13\ann_1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package rerunfilecheck Info: File `ann_1.out' has not changed.
+(rerunfilecheck)             Checksum: A2533A0DE926DBB5A113395C4D662A44;408.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8621 strings out of 494045
+ 119604 string characters out of 3148384
+ 278794 words of memory out of 3000000
+ 11757 multiletter control sequences out of 15000+200000
+ 14354 words of font info for 38 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 34i,11n,43p,563b,1659s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm0900.pk> <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecrm1095.pk> <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Magnus\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ann_1.pdf (9 pages, 324570 bytes).
+PDF statistics:
+ 334 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+
