@@ -1,8 +1,5 @@
 x=[-5:1:5]';
 y=x;
-
-
-
 z=exp(-x.*x*0.1) * exp(-y.*y*0.1)' - 0.5;
 
 epochs = 1000;
@@ -44,5 +41,24 @@ figure;
     
 figure;
 mesh(x,y,z);
+    axis([-5 5 -5 5 -0.7 0.7]);
+    title('Gauss function');
+
+figure;
+x = [-5:0.1:5]';
+y = x;
+z=exp(-x.*x*0.1) * exp(-y.*y*0.1)' - 0.5;
+
+targets = reshape (z, 1, size(z,1)*size(z,2));
+[xx, yy] = meshgrid (x, y);
+patterns = [reshape(xx, 1, size(xx,1)*size(xx,2)); reshape(yy, 1, size(yy,1)*size(yy,2))];
+
+[insize, ndata] = size(patterns);
+[outsize, ndata] = size(targets);
+X = [patterns ; ones(1,ndata)];
+
+[Oout, Hout] = forwardpass(X, W, V);
+zz = reshape(Oout, sqrt(ndata), sqrt(ndata));
+mesh(x,y,zz);
     axis([-5 5 -5 5 -0.7 0.7]);
     title('Gauss function');
