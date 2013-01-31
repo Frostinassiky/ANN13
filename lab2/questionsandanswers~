@@ -1,0 +1,100 @@
+Bunch of theoretical questions
+
+• What is the lower bound for the number of training examples, N?
+
+Answer: N needs to be atleast n + 1 since otherwise we can solve the equation exactly.
+
+• What happens with the error if N = n? Why?
+
+Answer: In theory we will get a zero error since we can solve the equation exactly and it's no longer overdetermined.
+
+• Under what conditions, if any, does (4) have a solution in this case?
+
+Answer: The equation has a solution for N <= n since we have more/equal weights than approximation values and we can tune the weights to solve the equation.
+
+• During training we use an error measure dened over the training exam ples. Is it good to use this measure when evaluating the performance of
+the network? Explain!
+
+Answer: It's good to see if the network is working, but to measure the performance of the network we should use a valdiation set which we approximate and measure the error for.
+Since the network is trained on the training data and it's minimizing the error for the training data it will get a good result for teh trainig data but it does not neccesarily refelct the perforamce it will have on different data.
+If we train to much we may overfitt the network for the training data.
+
+Bunch of questions for RBF sin2x:
+
+• How many units did you require to get down to a maximum (absolute) residual value of 0.1, 0.01 and 0.001?
+
+Answer: 7,25,56
+
+•  Give a good reason for the big dierence in residual between 5 and 6 units
+for sin(2x).
+
+Answer: We need one node to represent each peak and valley aswell as two extra nodes to represent the end and start poitns to be able to approximate the function exactly.
+See image: (image of six RBD units and their mapping to the sin wave)
+
+Bunch of questions for RBF square(2x).
+
+• How many units did you require, when approximating square(2x),to come down to residual values of 0.1, 0.01 and 0.001?
+
+Answer:59, 63, 63 (63 is the number of patterns we have to train on, that's why we get a good fit for it)
+
+• Approximating square(2x) is a somewhat special case of function approximation since it is similar to another area of use for articial neural
+networks. Which? Hint: ANNs can be used for pattern completion, noise reduction, . . .
+
+Answer: Signal processing? Maybe expand a little here...
+
+• Can you, with a suitable action (e.g. transforming network output), easy
+get down (for training values) to a residual value=0? What action? How many units did you require?
+
+Answer: We can threashold units so that they are either 1 or -1 with the sign function.
+We require 6 hidden units since that's what is needed to approximate a sin wave of the same periodicity.
+
+• Can an RBF network solve the XOR problem? If not, explain why not.
+If yes, explain how.
+
+Answer: The lab notes seem to say that we can classify non lineraly seperable data with RBF:s, see page 3, top of page right before section 3.2.
+More specifically we need to get one output for (0,0) and (1,1) and one output for (1,0) and (0,1). If we center two gaussians of the same size on (0,0) and (1,1) we will get two max peaks at (0,0) and (1,1) and since (1,0) and (0,1) are in between them we will get a lower value for those two points. Thus we have mapped (0,0) and (1,1) to one value and (1,0) and (0,1) to another value.
+
+Bunch of questsions about RBF delta rule with diter runs.
+
+• How many units and iterations did you require to come down to a maximum residual value of 0.01? 
+What value(s) of η did you use?
+
+Answer: A combination of 500000 iterations, eta = 0.05 and 50 units got us an error below 0.01. Perhaps try again with higher eta and lower iterations to make it faster. We could allasy use the same number of nodes as patterns ofcourse, but seems liek cheating.
+Seems like this was too much though, but it was hard to get from 0.1 to 0.01
+
+• Now try approximating some function of your own choice. Use least squares or the delta rule as you wish.
+
+Answer: A linear function and a sin(x)+cos(x) function are approximated in the file ownfunction.m.
+In the lienar function we see that the RBF works better for periodic functions since we see a periodic function approximated to the line.
+
+Bunch of questions about Vq algorithm
+
+• What problem could be seen when using the single winner strategy (singlewinner=1)?
+
+Answer:
+
+• What is the advantage of using this strategy?
+
+Answer:
+
+Question about EM algorthm
+
+• Describe dierences between using the single winner strategy (singlewin-
+ner=1) and allowing all units to move (singlewinner=0) for the batchwise
+algorithm.
+
+Answer:
+
+Question about noisy data (ballistics data) approximation.
+
+• When the network har a large learning capacity, there is always the risk of
+overlearning. If you have time, try reducing the number of units to see if it gets
+better or worse. You can also test what happens if you low-pass lter the input
+to get rid of some noise during training.
+Did you try these improvements? Did it help?
+
+Answer:
+
+
+
+

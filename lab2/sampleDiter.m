@@ -2,7 +2,7 @@
 %figures
 %run multiple runs on diter to see eta, units and iterationis impact on
 %error.
-samples = 20; %makerbf intisalise weight matrix randomly, iterate to get better result
+samples = 2000; %makerbf intisalise weight matrix randomly, iterate to get better result
 fun = @(x) (sin(2*x));
 x = 0:0.1:2*pi;
 x = x';
@@ -20,6 +20,12 @@ for j=1:samples,
         errors(i) = errors(i) + max(abs(f-y)); %maxError
         i = i+1;
     end
+    
+    if j==samples/100,
+       disp('Eta sample'); 
+       disp(int2str(j));
+    end
+    
 end
 
 errors = errors./samples;
@@ -38,6 +44,11 @@ for j=1:samples,
         diter;
         errorsU(i) = errorsU(i) + max(abs(f-y)); %maxError
         i = i+1;
+    end
+    
+    if j==samples/100,
+       disp('Unit sample'); 
+       disp(int2str(j));
     end
 end
 
@@ -58,9 +69,14 @@ for j=1:samples,
         makerbf;
         itersub = myItermax;
         itermax = myItermax;
-        diter;
+        diterNoPlot;
         errorsI(i) = errorsI(i) + max(abs(f-y)); %maxError
         i = i+1;
+    end
+    
+    if j==samples/100,
+       disp('Iter sample'); 
+       disp(int2str(j));
     end
 end
 
