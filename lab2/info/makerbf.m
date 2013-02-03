@@ -25,6 +25,6 @@ w=rand(rows(m),1)+0.1;
 %These variables are used by lmsiter.m
 iter=0;
 itersub=20;		% subsampling
-itermax=2000;		% # iterations per call to diter (multiple of itersub)
+itermax=2000;	% # iterations per call to diter (multiple of itersub)
 
 delta=0.2;		% used by others

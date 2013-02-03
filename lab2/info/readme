@@ -1,0 +1,32 @@
+Files:
+rbfapproximation is for doing the least square RBF.
+
+sin2x contains the approximation for the function sin(2x), 
+The figures called sin2x_something are testruns for the sin2x approxaimtion with different number of hidden units.
+
+square2x contains the approximation for the function square(2x).
+The figures called square2x_something are testruns for the square2x approxaimtion with different number of hidden units.
+
+square2xthreasholded is square2x but using a sign function to threashold the output.
+
+testDiter and sampleDiter are for testing the delta rule of the RBF network. testDiter does one run
+to try and get below error 0.01. sampleDiter does multiple runs to test the effect eta, number of units and number of iterations has on the error.
+
+ownfunction is for testing approximating other functions with least square.
+
+Files vq and em is for section 5 and running the comamnd for vector quantization and expectation maximization.
+
+ballistics does one run of teh ballistics data in section 6.
+ballisticsUnitsAndLowPass does multiple runs of ballistics to test how the error depends on the number of units aswell as to test if lowpass filtering helps.
+Unfortunally it doesn't seem like the lowpass filtering is completly right since it should probably make the alrotightm perform better since we should get rid of noise.
+Matlab seems to have inbuilt functions for doing lowpass filtering but it didn't help.
+
+What needs to be done:
+
+Answer unanswered questions in file questionsandanswers.
+
+Make the lowpass filtering work correctly. (maybe not neccessary since it seems to be an optional question)
+
+Plots and graphs for questions/runs in section 5 to section 6.
+
+

@@ -9,6 +9,6 @@ while (diffvar>1e-7) & (diffm>1e-8)
   diffm = sum(sum((m-oldm).*(m-oldm)));
   diffvar =sum((var-oldvar).*(var-oldvar));
   %plotrefresh(pd);
-  pause(0.3);
+  pause(0.7);
 end;
 %plotnobuff(pd);

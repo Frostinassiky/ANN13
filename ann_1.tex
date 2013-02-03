@@ -34,7 +34,7 @@
 
 \section{One layered neural network with delta rule}
 
-For the one layered network we used the delta rule which minimizes the total error for the classifier, although not in the sense that it minimizes the number of incorrectly classified instances, but that the error/distance from the separating line to the instances becomes minimum. Below you can see the matrix transformations for the 
+For the one layered network we used the delta rule which minimizes the total error for the classifier, although not in the sense that it minimizes the number of incorrectly classified instances, but that the error/distance from the separating line to the instances becomes minimum. Below you can see the matrix transformations for the one layered network.
 
 \vspace{5cm}
 \begin{figure}[h!]
@@ -64,7 +64,7 @@ In figure \ref{fig:linear1:sub1} you can see the linearly seperable data generat
 \caption{One layer neural network tests runs}
 \end{figure}
 
-When we modify the learning rate for the network we find that smaller learning rate means that the network takes longer to converge which inturn means that we will need more epochs before it converges. A larger learning rate has it's own problems though. A too large learning rate will make the weight matrix contain too large numbers for Matlab to be able to handle it. A slightly larger learning rate may however cause the seperating line to oscillate although it still finds the minimum.
+When we modify the learning rate for the network we find that smaller learning rate means that the network takes longer to converge which in return means that we will need more epochs before it converges. A larger learning rate has it's own problems though. A too large learning rate will make the weight matrix contain too large numbers for Matlab to be able to handle it. A slightly larger learning rate may however cause the seperating line to oscillate although it still finds the minimum.
 
 \begin{figure}[h!]
 \subfigure[The movement of the seperating line to it's final position.]{
@@ -142,7 +142,7 @@ Now we will show how two layered networks can be used for datacompression. In fi
 \vspace{5cm}
 \begin{figure}[h!]
 \label{fig:compress}
-\caption{The two layer neural network layout}
+\caption{The two layer neural network layout for the compressing network}
 \end{figure}
 
 \begin{figure}[h!]

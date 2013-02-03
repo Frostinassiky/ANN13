@@ -21,6 +21,10 @@ ballisticsUnitsAndLowPass does multiple runs of ballistics to test how the error
 Unfortunally it doesn't seem like the lowpass filtering is completly right since it should probably make the alrotightm perform better since we should get rid of noise.
 Matlab seems to have inbuilt functions for doing lowpass filtering but it didn't help.
 
+##
+Noise may avoid dead units, that may help in fact !
+
+
 What needs to be done:
 
 Answer unanswered questions in file questionsandanswers.

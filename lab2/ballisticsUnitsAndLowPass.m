@@ -5,14 +5,14 @@ plotinit;
 data=xtrain;
 singlewinner=1;
 
-allUnits = 20:10:80;
+allUnits = 20:-1:5;
 
 errorTrain1 = zeros(1,size(allUnits,2));
 errorTrain2 = zeros(1,size(allUnits,2));
 errorTest1 = zeros(1,size(allUnits,2));
 errorTest2 = zeros(1,size(allUnits,2));
 
-samples = 50;
+samples = 1000;
 
 warn = warning ('off','all');
 
@@ -50,19 +50,17 @@ for it=1:samples,
     end
 end
 
-%lowpass filter, broken?
-B = fir1(1,0.7);
-xtrain = [filter(B,1, xtrain(:,1)), filter(B,1, xtrain(:,2))];
-xtest = [filter(B,1, xtest(:,1)), filter(B,1, xtest(:,2))];
-ytrain = [filter(B,1, ytrain(:,1)), filter(B,1, ytrain(:,2))];
-ytest = [filter(B,1, ytest(:,1)), filter(B,1, ytest(:,2))];
-
-
+[B,A] = butter(4,0.3,'low');% low pass digital filter
+xtrain = filter(B,A,xtrain);
+xtest = filter(B,A,xtest);
+ytrain = filter(B,A,ytrain);
+ytest = filter(B,A,ytest);
 
 lowerrorTrain1 = zeros(1,size(allUnits,2));
 lowerrorTrain2 = zeros(1,size(allUnits,2));
 lowerrorTest1 = zeros(1,size(allUnits,2));
 lowerrorTest2 = zeros(1,size(allUnits,2));
+
 data=xtrain;
 
 %Run for lowpassed data
@@ -100,21 +98,22 @@ for it=1:samples,
     end
 end
 
+subplot(2,2,1);
 plot(allUnits,errorTrain1./samples,allUnits,lowerrorTrain1./samples);
-legend('Train 1, Low passed train 1');
+legend('Train 1', 'Low passed train 1');
 xlabel('Units');
 ylabel('Error');
-figure();
+subplot(2,2,2);
 plot(allUnits,errorTrain2./samples,allUnits,lowerrorTrain2./samples);
-legend('Train 2, Low passed train 2');
+legend('Train 2', 'Low passed train 2');
 xlabel('Units');
 ylabel('Error');
-figure();
+subplot(2,2,3);
 plot(allUnits,errorTest1./samples,allUnits,lowerrorTest1./samples);
 legend('Test 1', 'Low passed test 1');
 xlabel('Units');
 ylabel('Error');
-figure();
+subplot(2,2,4);
 plot(allUnits,errorTest2./samples,allUnits,lowerrorTest2./samples);
 legend('Test 2', 'Low passed test 2');
 xlabel('Units');

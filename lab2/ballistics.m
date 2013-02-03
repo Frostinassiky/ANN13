@@ -3,12 +3,17 @@ plotinit;
 [xtest ytest]=readxy('balltest',2,2);
 
 %lowpass filter
-%B = fir1(1,0.7);
+[B,A] = butter(2,0.5,'low');	% low pass digital filter
+xtrain = filter(B,A,xtrain);
+xtest = filter(B,A,xtest);
+ytrain = filter(B,A,ytrain);
+ytest = filter(B,A,ytest);
+
+%B = fir1(1,0.2);
 %xtrain = [filter(B,1, xtrain(:,1)), filter(B,1, xtrain(:,2))];
 %xtest = [filter(B,1, xtest(:,1)), filter(B,1, xtest(:,2))];
 %ytrain = [filter(B,1, ytrain(:,1)), filter(B,1, ytrain(:,2))];
 %ytest = [filter(B,1, ytest(:,1)), filter(B,1, ytest(:,2))];
-
 
 units=20;
 data=xtrain;
