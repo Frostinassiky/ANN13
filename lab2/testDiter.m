@@ -4,12 +4,12 @@ fun = @(x) (sin(2*x));
 x = 0:0.1:2*pi;
 x = x';
     
-eta = 0.01;
-units = 25;
+eta = 0.5;
+units = 45;
 
 makerbf;
 
-itermax = 500000;
+itermax = 400000;
 itersub = itermax;
 
 diter;

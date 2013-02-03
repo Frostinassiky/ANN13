@@ -118,20 +118,26 @@ The lab notes seem to say that we can classify non lineraly seperable data with 
 
 \item \textit{How many units and iterations did you require to come down to a maximum residual value of 0.01 when using the delta rule? What value(s) of eta did you use?}
 
-A combination of 500000 iterations, eta = 0.05 and 50 units got us an error below 0.01. Perhaps try again with higher eta and lower iterations to make it faster.
-Seems like this was too much though, but it was hard to get from 0.1 to 0.01
-
-with eta = 1, 35unit and 100,000 iteration we are close to 0.013
-I think that our evaluating of the error is wrong, we should not evaluate the error on the edge (close tu 0 and 2 pi)
-
-
-
-
-
-
-
-
-
+\begin{figure}[h!]
+\subfigure[Run with eta 0.2]{
+    \includegraphics[width=0.5\linewidth]{lab2/eta02.png}
+    \label{figx:sub1}
+}
+\subfigure[Run with eta 0.5]{
+    \includegraphics[width=0.5\linewidth]{lab2/eta05.png}
+    \label{figx:sub2}
+}
+\subfigure[Run with eta 1]{
+    \includegraphics[width=0.5\linewidth]{lab2/eta1.png}
+    \label{figx:sub3}
+}
+\subfigure[Convergence of error for eta values with a 1000 iterations.]{
+    \includegraphics[width=0.5\linewidth]{lab2/diter_eta.png}
+    \label{figx:sub4}
+}
+\label{figx}
+\caption{}
+\end{figure}
 
 \item \textit{Now try approximating some function of your own choice. Use least squares or the delta rule as you wish.}
 
@@ -187,6 +193,7 @@ all the units are not used at their best. For a single winner strategy it should
     \includegraphics[width=0.5\linewidth]{lab2/emSingle.png}
     \label{fig5:sub1}
 }
+\hspace{5mm}
 \subfigure[Expectation Maximization without a single winner. Everything worked out OK.]{
     \includegraphics[width=0.5\linewidth]{lab2/emNotSingle.png}
     \label{fig5:sub2}
@@ -195,6 +202,7 @@ all the units are not used at their best. For a single winner strategy it should
     \includegraphics[width=0.5\linewidth]{lab2/emSingleBad.png}
     \label{fig5:sub3}
 }
+\hspace{5mm}
 \subfigure[Expectation Maximization with a single winner. Even when we have the same number of units as clusters we can get the same problem.]{
     \includegraphics[width=0.5\linewidth]{lab2/emSingleSameClusterAndUnit.png}
     \label{fig5:sub4}
