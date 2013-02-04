@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.1.19)  3 FEB 2013 22:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.1.19)  4 FEB 2013 22:31
 entering extended mode
 **C:/cygwin/home/Magnus/matlab/ANN13/ann_2.tex
 (C:/cygwin/home/Magnus/matlab/ANN13/ann_2.tex
@@ -508,12 +508,12 @@ File: lab2/eta1.png Graphic file (type png)
 Package pdftex.def Info: lab2/eta1.png used on input line 133.
 (pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
 
-<lab2/diter_eta.png, id=62, 422.32782pt x 316.18124pt>
-File: lab2/diter_eta.png Graphic file (type png)
+<lab2/etaconvergence.png, id=62, 422.32782pt x 311.66437pt>
+File: lab2/etaconvergence.png Graphic file (type png)
 
-<use lab2/diter_eta.png>
-Package pdftex.def Info: lab2/diter_eta.png used on input line 137.
-(pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
+<use lab2/etaconvergence.png>
+Package pdftex.def Info: lab2/etaconvergence.png used on input line 137.
+(pdftex.def)             Requested size: 234.2025pt x 172.83786pt.
 
 Overfull \hbox (16.94377pt too wide) in paragraph at lines 125--139
 [][] [][]
@@ -526,8 +526,8 @@ Overfull \hbox (16.94377pt too wide) in paragraph at lines 125--139
 
 [4 <C:/cygwin/home/Magnus/matlab/ANN13/lab2/eta02.png (PNG copy)> <C:/cygwin/ho
 me/Magnus/matlab/ANN13/lab2/eta05.png (PNG copy)> <C:/cygwin/home/Magnus/matlab
-/ANN13/lab2/eta1.png (PNG copy)> <C:/cygwin/home/Magnus/matlab/ANN13/lab2/diter
-_eta.png (PNG copy)>] <lab2/linear.png, id=72, 422.32782pt x 316.18124pt>
+/ANN13/lab2/eta1.png (PNG copy)> <C:/cygwin/home/Magnus/matlab/ANN13/lab2/etaco
+nvergence.png (PNG copy)>] <lab2/linear.png, id=72, 422.32782pt x 316.18124pt>
 File: lab2/linear.png Graphic file (type png)
 
 <use lab2/linear.png>
@@ -553,27 +553,29 @@ Package pdftex.def Info: lab2/vqOk2.png used on input line 174.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<lab2/emSingle.png, id=75, 422.32782pt x 316.18124pt>
+[5 <C:/cygwin/home/Magnus/matlab/ANN13/lab2/linear.png (PNG copy)> <C:/cygwin/h
+ome/Magnus/matlab/ANN13/lab2/sqrt.png (PNG copy)>]
+<lab2/emSingle.png, id=84, 422.32782pt x 316.18124pt>
 File: lab2/emSingle.png Graphic file (type png)
  <use lab2/emSingle.png>
 Package pdftex.def Info: lab2/emSingle.png used on input line 195.
 (pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
 
-<lab2/emNotSingle.png, id=76, 422.32782pt x 316.18124pt>
+<lab2/emNotSingle.png, id=85, 422.32782pt x 316.18124pt>
 File: lab2/emNotSingle.png Graphic file (type png)
 
 <use lab2/emNotSingle.png>
 Package pdftex.def Info: lab2/emNotSingle.png used on input line 200.
 (pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
 
-<lab2/emSingleBad.png, id=77, 422.32782pt x 316.18124pt>
+<lab2/emSingleBad.png, id=86, 422.32782pt x 316.18124pt>
 File: lab2/emSingleBad.png Graphic file (type png)
 
 <use lab2/emSingleBad.png>
 Package pdftex.def Info: lab2/emSingleBad.png used on input line 204.
 (pdftex.def)             Requested size: 234.2025pt x 175.34274pt.
 
-<lab2/emSingleSameClusterAndUnit.png, id=78, 422.32782pt x 316.18124pt>
+<lab2/emSingleSameClusterAndUnit.png, id=87, 422.32782pt x 316.18124pt>
 File: lab2/emSingleSameClusterAndUnit.png Graphic file (type png)
 
 <use lab2/emSingleSameClusterAndUnit.png>
@@ -590,8 +592,6 @@ Overfull \hbox (33.59175pt too wide) in paragraph at lines 195--211
 [][]   [][]
  []
 
-[5 <C:/cygwin/home/Magnus/matlab/ANN13/lab2/linear.png (PNG copy)> <C:/cygwin/h
-ome/Magnus/matlab/ANN13/lab2/sqrt.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -641,12 +641,12 @@ Package rerunfilecheck Info: File `ann_2.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  7836 strings out of 494045
- 111283 string characters out of 3148384
+ 111308 string characters out of 3148384
  233794 words of memory out of 3000000
  10978 multiletter control sequences out of 15000+200000
  15824 words of font info for 42 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,11n,43p,857b,431s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,12n,43p,857b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecrm0900.pk> <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
 n\ec\dpi600\ecrm1095.pk> <C:\Users\Magnus\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
@@ -657,9 +657,9 @@ ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ann_2.pdf (9 pages, 232827 bytes).
+Output written on ann_2.pdf (9 pages, 233078 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
+ 381 PDF objects out of 1000 (max. 8388607)
  41 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

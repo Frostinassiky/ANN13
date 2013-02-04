@@ -12,7 +12,7 @@ errorTrain2 = zeros(1,size(allUnits,2));
 errorTest1 = zeros(1,size(allUnits,2));
 errorTest2 = zeros(1,size(allUnits,2));
 
-samples = 1000;
+samples = 100;
 
 warn = warning ('off','all');
 
@@ -50,7 +50,12 @@ for it=1:samples,
     end
 end
 
-[B,A] = butter(4,0.3,'low');% low pass digital filter
+%[B,A] = butter(4,0.3,'low');% low pass digital filter
+%xtrain = filter(B,A,xtrain);
+%xtest = filter(B,A,xtest);
+%ytrain = filter(B,A,ytrain);
+%ytest = filter(B,A,ytest);
+[B,A] = butter(4,0.5,'low');	% low pass digital filter
 xtrain = filter(B,A,xtrain);
 xtest = filter(B,A,xtest);
 ytrain = filter(B,A,ytrain);

@@ -3,13 +3,16 @@ plotinit;
 [xtest ytest]=readxy('balltest',2,2);
 
 %lowpass filter
-[B,A] = butter(2,0.5,'low');	% low pass digital filter
+
+xtraincopy = xtrain;
+ytraincopy = ytrain;
+[B,A] = butter(4,0.5,'low');	% low pass digital filter
 xtrain = filter(B,A,xtrain);
 xtest = filter(B,A,xtest);
 ytrain = filter(B,A,ytrain);
 ytest = filter(B,A,ytest);
 
-%B = fir1(1,0.2);
+%B = fir1(4,0.5);
 %xtrain = [filter(B,1, xtrain(:,1)), filter(B,1, xtrain(:,2))];
 %xtest = [filter(B,1, xtest(:,1)), filter(B,1, xtest(:,2))];
 %ytrain = [filter(B,1, ytrain(:,1)), filter(B,1, ytrain(:,2))];
@@ -45,3 +48,9 @@ subplot(yVal,xVal,k), xyplot(d1,y1,'train1'), k = k+1;
 subplot(yVal,xVal,k), xyplot(d2,y2,'train2'), k = k+1;
 subplot(yVal,xVal,k), xyplot(dtest1,ytest1,'test1'), k = k+1;
 subplot(yVal,xVal,k), xyplot(dtest2,ytest2,'test2');
+
+figure;
+subplot(1,2,1), plot(xtraincopy,ytraincopy,'*');
+legend('Data1','Data2');
+subplot(1,2,2), plot(xtrain,ytrain,'*');
+legend('Data1','Data2');
